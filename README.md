@@ -7,4 +7,4 @@ This implements soft-PWM on two GPIO pins to control motor speeds.
 
 Requirements: pygame, https://github.com/xtacocorex/CHIP_IO
 
-![wiring diagram](images/chipbot_diagram.jpg)
+![wiring diagram](images/h-bridge.jpg)
