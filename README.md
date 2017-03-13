@@ -5,4 +5,4 @@ This is intended to control two-wheeled robot platforms such as http://a.co/bwBc
 
 This implements soft-PWM on two GPIO pins to control motor speeds. 
 
-Requirements: https://github.com/xtacocorex/CHIP_IO
+Requirements: pygame, https://github.com/xtacocorex/CHIP_IO
