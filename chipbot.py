@@ -54,6 +54,8 @@ def motoroff():
     GPIO.output(drive_1, GPIO.LOW)
     GPIO.output(drive_2, GPIO.LOW)
     GPIO.output(drive_3, GPIO.LOW)
+    SPWM.set_duty_cycle(PWM_0, 0)
+    SPWM.set_duty_cycle(PWM_1, 0)
 
 # Function to handle pygame events
 def pygamehandler(events):
