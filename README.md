@@ -10,3 +10,4 @@ Requirements:
 - https://github.com/xtacocorex/CHIP_IO
 
 ![wiring diagram](images/h-bridge.jpg)
+!{chipbot in action](images/chipbot.gif)
