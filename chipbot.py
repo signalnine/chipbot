@@ -42,13 +42,23 @@ global rightmotor
 leftmotor = 0
 rightmotor = 0
 
-# Setup pygame and initialize joystick
+# Setup pygame
 pygame.init()
-pygame.joystick.init()
+
+# Wait for joystick to become available
+joystick_count = pygame.joystick.get_count()
+while joystick_count == 0:
+    print "joystick disconnected, waiting.."
+    pygame.joystick.quit()
+    time.sleep(5)
+    pygame.init()
+    joystick_count = pygame.joystick.get_count()
+
+# Initialize joystick
 joystick = pygame.joystick.Joystick(0)
 joystick.init()
 
-# Function to set all drives to off
+# Set all drives to off
 def motoroff():
     GPIO.output(drive_0, GPIO.LOW)
     GPIO.output(drive_1, GPIO.LOW)
